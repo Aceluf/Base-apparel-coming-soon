@@ -1,0 +1,325 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+html, body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  max-width: 23.4375rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(135deg, white, #fff5f5);
+  background-repeat: no-repeat;
+  padding-top: 1.875rem;
+}
+.container .box {
+  position: relative;
+}
+.container .logo-container {
+  width: 6.25rem;
+  margin-bottom: 1.875rem;
+  margin-left: 1.25rem;
+}
+.container .logo-container img {
+  width: auto;
+}
+.container .hero {
+  background-image: url("images/hero-mobile.jpg");
+  height: 15.625rem;
+  width: 100%;
+  margin-bottom: 3.75rem;
+}
+.container .title {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.625rem;
+  color: #413a3a;
+  margin-bottom: 1.875rem;
+}
+.container .title span {
+  color: #ce9797;
+  font-weight: 300;
+}
+.container .description {
+  text-align: center;
+  color: #ce9797;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1.875rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+.container .form-control {
+  border-radius: 1.875rem;
+  border: 1px solid #ce9797;
+  width: 19.375rem;
+  height: 3.125rem;
+  padding-left: 1.875rem;
+  margin-left: 2.1875rem;
+  margin-bottom: 5rem;
+  color: #ce9797;
+  background-color: transparent;
+  position: relative;
+}
+.container .form-control::placeholder {
+  color: #ce9797;
+  opacity: 0.6;
+}
+.container .form-control:focus {
+  border-radius: 1.875rem;
+  border: 2px solid #f96262;
+  outline: 0;
+}
+.container .icon {
+  content: "";
+  background-image: url("images/icon-error.svg");
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  position: absolute;
+  right: 30%;
+  bottom: 12%;
+}
+.container .btn {
+  height: 3.125rem;
+  width: 4.375rem;
+  position: absolute;
+  border-radius: 3.125rem;
+  border: 1px solid #f8bfbf;
+  right: 8%;
+  background-image: url("images/icon-arrow.svg"), linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 1px 5px 10px 3px #f8bfbf;
+}
+.container .btn:hover {
+  background-image: url("images/icon-arrow.svg");
+  background-color: #f8bfbf;
+  border: 1px solid #f8bfbf;
+  transform: scale(1.1);
+  box-shadow: 1px 5px 10px 3px #ce9797;
+}
+.container .btn:focus {
+  outline: 0;
+}
+.container .validation-text {
+  font-size: 0.6875rem;
+  color: #ee8c8c;
+  position: absolute;
+  bottom: 8%;
+  left: 17.5%;
+}
+.container .hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+  .container {
+    padding-top: 0;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 50rem;
+    background-image: url("images/bg-pattern-desktop.svg"), linear-gradient(135deg, white, #fff5f5);
+  }
+  .container .box {
+    display: grid;
+    grid-template-rows: 12.5rem 37.5rem;
+    grid-template-columns: 57.64% 42.36%;
+    grid-template-areas: "logo advert" "body advert";
+  }
+  .container .box .logo-container {
+    width: 15.625rem;
+    margin-top: 4.375rem;
+    margin-left: 13.125rem;
+    grid-area: logo;
+  }
+  .container .box .hero {
+    background-image: url("images/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    grid-area: advert;
+    height: 100%;
+  }
+  .container .box .text-box {
+    grid-area: body;
+  }
+  .container .box .text-box .title {
+    text-align: start;
+    margin-left: 13.125rem;
+    margin-top: 3.125rem;
+    margin-right: 30%;
+    line-height: 1.2;
+  }
+  .container .box .text-box .description {
+    text-align: start;
+    margin-left: 13.125rem;
+    margin-right: 23%;
+    font-size: 16px;
+    margin-bottom: 2.5rem;
+  }
+  .container .box .text-box .form-control {
+    width: 26.875rem;
+    margin-left: 13.125rem;
+  }
+  .container .box .text-box .icon {
+    right: 63%;
+    bottom: 25%;
+  }
+  .container .box .text-box .btn {
+    width: 6.25rem;
+    right: 55%;
+  }
+  .container .box .text-box .validation-text {
+    bottom: 21%;
+    left: 16.7%;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1420px) {
+  .container {
+    padding-top: 0;
+  }
+  .container .box .text-box .btn {
+    right: 52%;
+  }
+  .container .box .text-box .icon {
+    right: 60%;
+  }
+}
+@media (min-width: 1314px) and (max-width: 1360px) {
+  .container {
+    padding-top: 0;
+  }
+  .container .box .text-box .description {
+    margin-right: 7.5rem;
+  }
+  .container .box .text-box .btn {
+    right: 41.875rem;
+  }
+  .container .box .text-box .icon {
+    right: 49.375rem;
+  }
+  .container .box .text-box .validation-text {
+    left: 15rem;
+  }
+}
+@media (min-width: 1146px) and (max-width: 1313px) {
+  .container {
+    padding-top: 0;
+  }
+  .container .box .logo-container {
+    margin-left: 11.875rem;
+  }
+  .container .box .text-box .title {
+    margin-left: 11.875rem;
+  }
+  .container .box .text-box .description {
+    margin-right: 6.25rem;
+    margin-left: 11.875rem;
+  }
+  .container .box .text-box .form-control {
+    width: 22.5rem;
+    margin-left: 11.875rem;
+  }
+  .container .box .text-box .btn {
+    right: 53%;
+  }
+  .container .box .text-box .icon {
+    right: 63%;
+    bottom: 12.5rem;
+  }
+  .container .box .text-box .validation-text {
+    left: 13.75rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1145px) {
+  .container {
+    padding-top: 0;
+  }
+  .container .box .logo-container {
+    margin-left: 9.375rem;
+  }
+  .container .box .text-box .title {
+    margin-left: 9.375rem;
+  }
+  .container .box .text-box .description {
+    margin-right: 3.125rem;
+    margin-left: 9.375rem;
+  }
+  .container .box .text-box .form-control {
+    width: 22.5rem;
+    margin-left: 9.375rem;
+  }
+  .container .box .text-box .btn {
+    right: 50%;
+  }
+  .container .box .text-box .icon {
+    right: 60%;
+    bottom: 12.5rem;
+  }
+  .container .box .text-box .validation-text {
+    left: 11.25rem;
+    bottom: 10rem;
+  }
+}
+@media (min-width: 376px) and (max-width: 999px) {
+  body {
+    background-color: #ee8c8c;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
