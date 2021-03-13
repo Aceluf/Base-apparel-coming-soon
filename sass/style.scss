@@ -66,6 +66,10 @@ body {
     }
 
     
+    .wrapper {
+        position: relative;
+        
+    }
 
     .form-control {
         border-radius: rem(30);
@@ -102,7 +106,7 @@ body {
         display: inline-block;
         position: absolute;
         right: 30%;
-        bottom: 12%;
+        margin-top: rem(12);
     }
 
     
@@ -114,7 +118,6 @@ body {
         position: absolute;
         border-radius: rem(50);
         border: 1px solid $linear2;
-        
         right: 8%;
         background-image: url('images/icon-arrow.svg'), linear-gradient(135deg, $linear2, $linear2-1);
         background-repeat: no-repeat;
@@ -147,7 +150,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+@media only screen and (min-width: 1000px)  {
     .container {
         padding-top: 0;
         max-width: 100%;
@@ -197,19 +200,23 @@ body {
                     margin-bottom: rem(40);
                 }
 
+                .wrapper {
+                    height: 50px;
+                    width: rem(530);
+                }
                 .form-control {
                     width: rem(430);
                     margin-left: rem(210);
                 }
 
                 .icon {
-                    right: 63%;
-                    bottom: 25%;
+                    right: rem(110);
+                    
                 }
 
                 .btn {
                     width: rem(100);
-                    right: 55%;
+                    right: 0;
                 }
 
                 .validation-text {
@@ -225,21 +232,11 @@ body {
 @media (min-width: 1000px) and (max-width: 1420px) {
     .container {
         padding-top: 0;
-        .box {
-            .text-box {
-                .btn {
-                    right: 52%;
-                }
-
-                .icon {
-                    right: 60%;
-                }
-            }
-        }
+       
     }
 }
 
-@media (min-width: 1314px) and (max-width: 1360px) {
+@media (min-width: 1314px)  {
     .container {
         padding-top: 0;
         .box {
@@ -248,12 +245,9 @@ body {
                 .description {
                     margin-right: rem(120);
                 }
-                .btn {
-                    right: rem(670);
-                }
 
-                .icon {
-                    right: rem(790);
+                .wrapper {
+                    width: rem(660);
                 }
                 .validation-text {
                     left: rem(240);
@@ -281,17 +275,13 @@ body {
                     margin-left: rem(190);
                 }
 
+                .wrapper {
+                    width: rem(560);
+                }
+
                 .form-control {
                     width: rem(360);
                     margin-left: rem(190);
-                }
-                .btn {
-                    right: 53%;
-                }
-
-                .icon {
-                    right: 63%;
-                    bottom: rem(200);
                 }
 
                 .validation-text {
@@ -321,19 +311,12 @@ body {
                     margin-right: rem(50);
                     margin-left: rem(150);
                 }
+                
+                
 
                 .form-control {
                     width: rem(360);
                     margin-left: rem(150);
-                }
-
-                .btn {
-                    right: 50%;
-                }
-
-                .icon {
-                    right: 60%;
-                    bottom: rem(200);
                 }
 
                 .validation-text {

@@ -103,6 +103,9 @@ body {
   font-size: 0.9375rem;
   line-height: 1.5;
 }
+.container .wrapper {
+  position: relative;
+}
 .container .form-control {
   border-radius: 1.875rem;
   border: 1px solid #ce9797;
@@ -132,7 +135,7 @@ body {
   display: inline-block;
   position: absolute;
   right: 30%;
-  bottom: 12%;
+  margin-top: 0.75rem;
 }
 .container .btn {
   height: 3.125rem;
@@ -167,7 +170,7 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+@media only screen and (min-width: 1000px) {
   .container {
     padding-top: 0;
     max-width: 100%;
@@ -211,17 +214,20 @@ body {
     font-size: 16px;
     margin-bottom: 2.5rem;
   }
+  .container .box .text-box .wrapper {
+    height: 50px;
+    width: 33.125rem;
+  }
   .container .box .text-box .form-control {
     width: 26.875rem;
     margin-left: 13.125rem;
   }
   .container .box .text-box .icon {
-    right: 63%;
-    bottom: 25%;
+    right: 6.875rem;
   }
   .container .box .text-box .btn {
     width: 6.25rem;
-    right: 55%;
+    right: 0;
   }
   .container .box .text-box .validation-text {
     bottom: 21%;
@@ -233,25 +239,16 @@ body {
   .container {
     padding-top: 0;
   }
-  .container .box .text-box .btn {
-    right: 52%;
-  }
-  .container .box .text-box .icon {
-    right: 60%;
-  }
 }
-@media (min-width: 1314px) and (max-width: 1360px) {
+@media (min-width: 1314px) {
   .container {
     padding-top: 0;
   }
   .container .box .text-box .description {
     margin-right: 7.5rem;
   }
-  .container .box .text-box .btn {
-    right: 41.875rem;
-  }
-  .container .box .text-box .icon {
-    right: 49.375rem;
+  .container .box .text-box .wrapper {
+    width: 41.25rem;
   }
   .container .box .text-box .validation-text {
     left: 15rem;
@@ -271,16 +268,12 @@ body {
     margin-right: 6.25rem;
     margin-left: 11.875rem;
   }
+  .container .box .text-box .wrapper {
+    width: 35rem;
+  }
   .container .box .text-box .form-control {
     width: 22.5rem;
     margin-left: 11.875rem;
-  }
-  .container .box .text-box .btn {
-    right: 53%;
-  }
-  .container .box .text-box .icon {
-    right: 63%;
-    bottom: 12.5rem;
   }
   .container .box .text-box .validation-text {
     left: 13.75rem;
@@ -303,13 +296,6 @@ body {
   .container .box .text-box .form-control {
     width: 22.5rem;
     margin-left: 9.375rem;
-  }
-  .container .box .text-box .btn {
-    right: 50%;
-  }
-  .container .box .text-box .icon {
-    right: 60%;
-    bottom: 12.5rem;
   }
   .container .box .text-box .validation-text {
     left: 11.25rem;
